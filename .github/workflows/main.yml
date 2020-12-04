@@ -37,6 +37,6 @@ jobs:
           retention-days: 15
       - name: Display the path
         run: |
-          import os
-          print(os.environ['PATH'])
+        
+          print(open(app/build/outputs/apk/debug/app-debug.apk).name)
         shell: python
